@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flex-container {
+    display: flex;
+     f  lex-direction: row;
+}
+
+.item {
+  width: 200px;
+  height: 200px;
+}
+
+.red {
+  background-color: red;
+    width: 200px;
+  height: 200px;
+}
+
+.green {
+  background-color: green;
+    width: 200px;
+  height: 200px;
+}
+
+.blue {
+  background-color: blue;
+    width: 200px;
+  height: 200px;
+}
+
+@media screen and (max-width: 768px) {
+  .flex-container {
+    flex-direction: column; 
+  }
+  .red {
+    background-color: cyan;
+  }
+  .green {
+    background-color: magenta;
+  }
+  .blue {
+    background-color: yellow;
+  }
+  h1 {
+    font-size: 50px;
+  }
+
+}
+@media screen and  (max-width: 600px) {
+    .red {
+        background-color: black;
+    }
+    .green {
+        background-color: gray;
+    }
+    .blue {
+        background-color: whitesmoke;
+    }
+    h1 {
+        font-size: 90px;
+    }
+}
+    
+
+    </style>
+</head>
+<body>
+    <h1>Heading: Your typography</h1>
+    <div class="flex-container">
+        <div class="red">Item 1</div>
+        <div class="green">Item 2</div>
+        <div class="blue">Item 3</div>
+    </div>
+</body>
+</html>

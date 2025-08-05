@@ -1,0 +1,259 @@
+:root {
+    --primary: #000000;
+    --secondary: #ffc400;
+    --dark: #1a1a2e;
+    --darker: #0f0f1a;
+    --light: #f8f9fa;
+    --danger: #e94560;
+    --warning: #ff9f43;
+}
+
+body {
+    background-color: var(--darker);
+    color: var(--light);
+    font-family: "Permanent Marker", cursive;
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Permanent Marker", cursive;
+    font-weight: 600;
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.9);
+    border-bottom: 1px solid var(--primary);
+    transition: all 0.3s ease;
+}
+
+.navbar.scrolled {
+    background-color: rgba(10, 10, 20, 0.95);
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.navbar-brand {
+    font-family: "Permanent Marker", cursive;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: white;
+    text-shadow: 0 0 10px black;
+}
+
+.nav-link {
+    font-family: "Permanent Marker", cursive;
+    font-weight: 400;
+    color: var(--light);
+    margin: 0 10px;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--secondary);
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--secondary);
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("https://wallpapers.com/images/hd/anime-all-characters-hd-abdorpf0wfv8nbkf.jpg") no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at center, transparent 0%, var(--darker) 100%);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    padding: 2rem;
+}
+
+.hero h1 {
+    font-size: 4.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    background: linear-gradient(45deg, var(--primary), var(--secondary));
+    background-clip: text;
+    text-shadow: 0 0 20px #000000;
+    color: #ffc400;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    color: var(--light);
+}
+
+.btn-jujutsu {
+    background: #ffc400;
+    border: none;
+    color: white;
+    font-weight: 600;
+    padding: 12px 30px;
+    border-radius: 50px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.644);
+}
+
+.btn-jujutsu:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgb(255, 255, 255);
+    color: white;
+}
+
+.section-title {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 3rem;
+    color: var(--light);
+}
+
+.section-title::after {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 4px;
+    bottom: -10px;
+    left: 25%;
+    background: white;
+    border-radius: 2px;
+}
+
+.about-section {
+    padding: 100px 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("https://4kwallpapers.com/images/wallpapers/jujutsu-kaisen-2048x2048-9277.jpg") no-repeat center center/cover;
+    position: relative;
+    overflow: hidden;
+    background-color: #000000;
+}
+
+.about-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.1;
+    z-index: 0;
+}
+
+.about-content {
+    position: relative;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 3rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border: 1px solid #ffc400;
+}
+
+#characters {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("images/jujustu\ kaisen.jpg") no-repeat center center/cover;
+}
+.character-card {
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.character-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgb(255, 255, 255);
+    border: 1px solid var(--secondary);
+}
+
+.character-img {
+    height: 350px;
+    object-fit: cover;
+    transition: all 0.5s ease;
+}
+
+.character-card:hover .character-img {
+    transform: scale(1.05);
+}
+
+.character-name {
+    font-family: "Permanent Marker", cursive;
+    font-size: 1.8rem;
+    color: var(--secondary);
+    margin-bottom: 1rem;
+}
+
+.character-role {
+    display: inline-block;
+    background: linear-gradient(45deg, var(--primary), var(--secondary));
+    color: white;
+    padding: 3px 15px;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.custom-input {
+    background-color: #000000;
+    border: 1px solid #ffc400;
+}
+.custom-input::placeholder {
+    color: #424242;
+}
+.custom-input:focus {
+    border-color: #ffc400;
+    box-shadow: 0 0 10px #ffc400;
+}
+
+.glow-btn {
+    background-color: #ffc400;
+    border: none;
+    font-weight: bold;
+    box-shadow: 0 0 10px #ffc400;
+    transition: all 0.3s ease-in-out;
+}
+.glow-btn:hover {
+    box-shadow: 0 0 20px #ffc400;
+    transform: scale(1.02);
+}
+
+#contact {
+    border-bottom: 2px solid white;
+}

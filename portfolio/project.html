@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>My portfolio</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous" />
+        <link rel="stylesheet" href="project.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Julius+Sans+One&family=Quicksand:wght@300..700&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container">
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto gap-5">
+                        <li class="nav-item">
+                            <a class="nav-link active fs-5" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-5" href="#">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-5" href="#">Hobby</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-5" href="#">Achievements</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-5" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <header>
+            <div class="container-fluid about-me">
+                <div class="row align-items-center vh-100">
+                    <div class="col-lg-6 d-flex flex-column align-items-center justify-content-center">
+                        <h1 class="text text-center">Hello I'm Kenneth Loh</h1>
+                        <p class="para">i'm a student in <strong class="text-primary">Forward Collage</strong></p>
+                    </div>
+                    <div class="col-lg-6 d-flex align-items-center justify-content-center flex-column">
+                        <img src="images/mekent.jpg" alt="Kenneth Loh" class="img-fluid rounded-5 shadow shadow-lg border border-black" style="max-width: 400px" />
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="container-fluid my-5 skills py-5" id="skills">
+            <h2 class="text-center mb-4 flex-shrink-1 fw-bold">Skills</h2>
+            <p class="text-center fs-4 mb-5">Here are some skills that I have learned.</p>
+            <div class="d-flex flex-wrap justify-content-center gap-4 text-center">
+                <div class="skill-card" id="HTML">
+                    <i class="bi bi-filetype-html" style="font-size: 5rem; color: #e34c26"></i>
+                    <p class="mt-2 fw-medium skill-label text-danger">HTML</p>
+                    <p class="skill-desc fs-4">HTML is the standard markup language for creating web pages.</p>
+                </div>
+
+                <div class="skill-card" id="CSS">
+                    <i class="bi bi-filetype-css" style="font-size: 5rem; color: #264de4"></i>
+                    <p class="mt-2 fw-medium skill-label text-primary">CSS</p>
+                    <p class="skill-desc fs-4">CSS styles and layouts web pages for better appearance.</p>
+                </div>
+
+                <div class="skill-card" id="Bootstraps">
+                    <i class="bi bi-bootstrap-fill" style="font-size: 5rem; color: #7952b3"></i>
+                    <p class="mt-2 fw-medium skill-label bootstraps">Bootstrap</p>
+                    <small class="skill-desc fs-4">Bootstrap is a CSS framework for building responsive sites.</small>
+                </div>
+
+                <div class="skill-card" id="Java">
+                    <i class="bi bi-filetype-js" style="font-size: 5rem; color: #f0db4f"></i>
+                    <p class="mt-2 fw-medium skill-label text-warning">JavaScript</p>
+                    <small class="skill-desc fs-4">JavaScript adds interactivity and logic to web pages.</small>
+                </div>
+
+                <div class="skill-card" id="PHP">
+                    <i class="bi bi-filetype-php" style="font-size: 5rem; color: #8993be"></i>
+                    <p class="mt-2 fw-medium skill-label text-secondary">PHP</p>
+                    <small class="skill-desc fs-4">PHP is a server-side scripting language for web development.</small>
+                </div>
+            </div>
+        </section>
+        <section class="container-fluid my-5" id="hobby">
+            <h1 class="text-center display-3 fw-bold">My Hobby</h1>
+
+            <div class="row align-items-center justify-content-center px-5 mb-5">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <div class="card shadow" style="width: 100%">
+                        <video class="card-img-top" control autoplay muted loop>
+                            <source src="images/mebadminton2.mov" type="video/mp4" />
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+
+                <!-- Text -->
+                <div class="col-lg-6">
+                    <h2 class="text-center display-5 fw-semibold mb-5">Badminton</h2>
+                    <h3 class="fw-bold pt-5">Why I Love Badminton</h3>
+                    <p class="fs-5">
+                        I started playing <strong>badminton</strong> when I was in primary school. I’ve always loved the sport and even went through proper training to improve. My biggest inspiration is Kento Momota, the famous Japanese player, whose calm style and strong determination really
+                        motivate me. Another person who inspires me is my dad — he also plays badminton, and I’ve always looked up to him. I hope to become as skilled as he is one day.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Equipment Section -->
+            <div class="container-fluid pt-5 equipment">
+                <h2 class="text-center fw-bold mb-4">Equipment I Use</h2>
+                <div class="row text-center justify-content-center">
+                    <!-- Racket -->
+                    <div class="col-6 col-md-4 mb-4">
+                        <img src="https://honly.com.my/images/com_hikashop/upload/552d6d89-a178-4a17-bd93-ae90ef59e4cb.jpeg" alt="Racket" class="img-fluid mb-2" style="height: 150px" />
+                        <h5 class="fw-semibold">Racket</h5>
+                        <p>Yonex Astrox 88S Pro - precise control and quick exchanges.</p>
+                    </div>
+                    <!-- Shoes -->
+                    <div class="col-6 col-md-4 mb-4">
+                        <img src="https://www.squashsource.com/wp-content/uploads/2018/06/Asics-Gel-Upcourt-3-White-Black.jpg" alt="Badminton Shoes" class="img-fluid mb-2" style="height: 150px" />
+                        <h5 class="fw-semibold">Shoes</h5>
+                        <p>Asics upcourt 3</p>
+                    </div>
+                    <!-- Shuttlecock -->
+                    <div class="col-6 col-md-4 mb-4">
+                        <img src="https://cdn.media.amplience.net/i/frasersdev/72701801_o.jpg?v=00010101000000" alt="Shuttlecock" class="img-fluid mb-2" style="height: 150px" />
+                        <h5 class="fw-semibold">String</h5>
+                        <p>Yonex Astrox BG66 Force - explosive repulsion, sharp control, and durability.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="achievement" id="achievements">
+            <div class="container my-5">
+                <h2 class="text-center mb-5">Achievements</h2>
+
+                <!-- Top Row: Left & Right Achievements -->
+                <div class="row mb-5">
+                    <!-- Left Achievement -->
+                    <div class="col-md-6 mb-4">
+                        <div class="card border-dark h-100 text-center p-4">
+                            <!-- Bigger Image (Adjust height as needed) -->
+                            <img src="images/mlbb.png" alt="Trophy" class="img-fluid mb-3" style="height: 250px; width: auto; object-fit: contain" />
+                            <h2 class="fw-bold">MLBB Competitive League</h2>
+                            <h4 class="">MCL 2021 & 2023 Champion</h4>
+                        </div>
+                    </div>
+
+                    <!-- Right Achievement -->
+                    <div class="col-md-6 mb-4">
+                        <div class="card border-dark h-100 text-center p-4">
+                            <img src="images/mountian.jpg" alt="Award" class="img-fluid mb-3" style="height: 250px; width: auto; object-fit: contain" />
+                            <h2 class="fw-bold">Emperor Villa competition hike</h2>
+                            <h4 class="">I got top 2 in hiking and i got <strong>RM250</strong> for the reward</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bottom Row: Centered Achievement -->
+                <div class="row justify-content-center">
+                    <div class="col-md-6">
+                        <div class="card border-dark text-center p-4">
+                            <img src="images/wushu2.png" alt="Star" class="img-fluid mb-3" style="height: 250px; width: auto; object-fit: contain" />
+                            <h2>Wushu Tournament</h2>
+                            <h4 class="text-muted">that was at highschool junior 1 first time joining a Tournament</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container py-5" id="contact">
+            <h1 class="text-center text-black display-4 mb-4">Contact Me</h1>
+            <p class="text-center text-black fs-5 mb-5">Feel free to reach out if you want to collaborate or have any questions!</p>
+
+            <div class="row justify-content-center">
+                <div class="col-md-8 col-lg-6">
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label text-black">Name</label>
+                            <input type="text" class="form-control bg-dark text-white border-white" id="name" placeholder="Your Name" />
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label text-black">Email</label>
+                            <input type="email" class="form-control bg-dark text-white border-white" id="email" placeholder="Your Email" />
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label text-black">Message</label>
+                            <textarea class="form-control bg-dark text-white border-white" id="message" rows="4" placeholder="Your Message"></textarea>
+                        </div>
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-outline-dark btn-lg">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <footer class="bg-black text-white py-4">
+            <div class="container text-center">
+                <p><i class="bi bi-envelope-fill me-2"></i>kenke0921@gmail.com</p>
+                <p><i class="bi bi-phone-fill me-2"></i>016-4214382</p>
+                <p>
+                    <a href="#" class="text-white me-3"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="text-white me-3"><i class="bi bi-github"></i></a>
+                    <a href="#" class="text-white"><i class="bi bi-linkedin"></i></a>
+                </p>
+                <p class="text-secondary small mb-0">&copy; 2025 Kenneth Loh. All rights reserved.</p>
+            </div>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    </body>
+</html>

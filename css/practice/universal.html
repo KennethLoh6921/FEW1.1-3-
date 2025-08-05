@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universal</title>
+    <style>
+        .container p {
+            color: red;
+        }
+        .container > p {
+            font-weight: bold;  
+        }
+        p + p {
+            font-style: italic;
+        }
+        a[href*="https://example.com"] {
+            color: blue;
+            text-decoration: underline;
+        }
+        img[alt^="A"] {
+                border: 1px solid black;
+                box-shadow: 2px 2px 5px gray;
+        }
+        input[type="text"] {
+            border: 1px solid lightgreen;   
+        }
+        button:hover {
+            background-color: blue;
+            color: white;
+        }
+        button:active {
+            background-color: red;
+            color: white;
+        }
+        input:focus {
+            border: 2px solid blue;
+        }
+        ul li:first-child {
+            font-weight: bold;
+        }
+        ul li:last-child {
+            color: red;
+        }
+        h2:first-of-type {
+            color: blue;
+        }
+        ul li:nth-child(2n) {
+            background-color: lightgreen;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p>1</p>
+        <p>2</p>
+        <p>some italic red words</p>
+        <div>
+            <p>3</p>
+            <p>4</p>
+            <p>some italic red word</p>
+        </div>
+        <p>5</p>
+        <p>6</p>
+        <a href="https://example.com">Click me!</a>
+        <img src="" alt="A"><br>
+        <br>
+        <input type="text" name="" id="">
+        <br><br>
+        <input type="text" placeholder="Enter your name">
+        <br><br>
+        <button>Submit</button> 
+        <br><br>
+        <ul>
+            <li>First item</li>
+            <li>Second item</li>
+            <li>Third item</li>
+            <li>Fourth item</li>
+        </ul>
+        
+    </div>
+</html>

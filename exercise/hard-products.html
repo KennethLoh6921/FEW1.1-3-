@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #f1f0f0;
+            margin: 0;
+        }
+        .title {
+            display: flex;
+            text-align: center;
+            justify-content: center;
+        }
+        .text {
+            display: flex;
+            text-align: center;
+            justify-content: center;
+        }
+        .first h1 {
+            text-underline-offset: 20px; 
+        }
+        .first {
+            margin-left: 40px;      
+            background: #fff;          
+            border: 1px solid #ccc;   
+            border-radius: 10px;      
+            padding: 30px 25px;        
+            max-width: 200px;          
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05); 
+            height: 700px;
+        }
+        .card {
+            width: 300px;
+            border:  1px solid light gray;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-left: auto;
+            margin-right: auto;
+
+        }
+        .card-content {
+            padding: 20px;
+        }
+
+        .card-title {
+            font-size: 24px;    
+            margin-bottom: 10px;
+        }
+
+        .card-text {
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="title">Our Products</h1>
+        <p class="text">Explore our wide range of high-quality products designed to make your life better.</p>
+    </header>
+    <div class="first">
+        <h1><u>filter Products</u></h1>
+        <div class="secord">
+            <h2>Categories</h2>
+            <input type="checkbox" id="all-products" name="all-products" value="all-products">
+            <label for="all-products">All Products</label><br>
+            <input type="checkbox">
+            <label for="Electronic">Electronic</label><br>
+            <input type="checkbox">
+            <label for="Clothing">Clothing</label><br>
+            <input type="checkbox">
+            <label for="Home">Home & Kitchen</label><br>
+            <input type="checkbox">
+            <label for="Sport">Sport & Outdoors</label>
+            <br><br>
+
+            <h2>Price Range</h2>
+            <input type="checkbox">
+            <label for="Price">Under $25</label><br>
+            <input type="checkbox">
+            <label for="Price">$25 - $50</label><br>
+            <input type="checkbox">
+            <label for="Price">$50 - $100</label><br>
+            <input type="checkbox">
+            <label for="Price">$100 - $200</label><br>
+            <input type="checkbox">
+            <label for="Price">Over $200</label>
+        </div>
+    </div>
+    <div class="third">
+           <div class="card">
+            <img src="https://placehold.co/300x200" alt="">
+        <div class="card-content">
+            <h3 class="card-title">Card Title</h3>
+            <p class="card-text">This is a simple card lauyout with a rounded image and content area This is a simple card lauyout with a rounded image and content area This is a simple card lauyout with a rounded image and content area.</p>
+        </div>
+   </div>
+    </div>
+</body>
+</html>

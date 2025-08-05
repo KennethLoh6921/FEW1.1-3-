@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sticky Navigation Exercise</title>
+    <!-- Load your css file here -->
+     <style>
+        body {
+            margin: 0;
+        }
+        header {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 5px;
+        }
+        sticky-nav {
+            position: sticky;
+            top: 0;
+            background-color: black;
+            padding: 5px;
+            border: 1px solid white;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;            
+            background-color: lightblue;
+            padding: 20px;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        .content-section {
+            min-height: 100vh;
+            padding: 50px;
+            text-align: center;
+        }
+        hr {
+            background-color: blue;
+        }
+
+        #section1 { background-color: lightgrey; }
+        #section2 { background-color: lightgrey; }
+        #section3 { background-color: lightgrey; }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 5px;
+            border: 1px solid white;
+        }
+
+     </style>
+</head>
+<body>
+    <header>
+        <h1>Website Title</h1>
+    </header>
+    
+    <nav class="sticky-nav">
+        <ul>
+            <li><a href="#section1">Section 1</a></li>
+            <li><a href="#section2">Section 2</a></li>
+            <li><a href="#section3">Section 3</a></li>
+        </ul>
+    </nav>
+    
+    <section id="section1" class="content-section">
+        <h2>Section 1</h2>
+        <p>Content for section 1...</p>
+        <hr>
+    </section>
+    
+    <section id="section2" class="content-section">
+        <h2>Section 2</h2>
+        <p>Content for section 2...</p>
+        <hr>
+    </section>
+    
+    <section id="section3" class="content-section">
+        <h2>Section 3</h2>
+        <p>Content for section 3...</p>
+        <hr>
+    </section>
+    
+    <footer>
+        <p>Footer content</p>
+    </footer>
+</body>
+</html>
